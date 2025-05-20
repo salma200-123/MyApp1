@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Q1 -->
+        <TextView android:text="1. Quelle balise HTML est la racine du document ?" android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_option1" android:text="&lt;html&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option2" android:text="&lt;body&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option3" android:text="&lt;head&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q2 -->
+        <TextView android:text="2. Quelle balise sert à créer un lien ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_option1" android:text="&lt;link&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option2" android:text="&lt;href&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option3" android:text="&lt;a&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q3 -->
+        <TextView android:text="3. Quelle balise contient les métadonnées ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_option1" android:text="&lt;body&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option2" android:text="&lt;head&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option3" android:text="&lt;footer&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q4 -->
+        <TextView android:text="4. Quelle balise affiche une image ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_option1" android:text="&lt;image&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option2" android:text="&lt;img&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option3" android:text="&lt;src&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q5 -->
+        <TextView android:text="5. Quelle balise définit le titre de la page ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5_option1" android:text="&lt;title&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option2" android:text="&lt;header&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option3" android:text="&lt;h1&gt;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+</ScrollView>

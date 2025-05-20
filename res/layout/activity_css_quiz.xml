@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Q1 -->
+        <TextView android:text="1. Quelle propriété CSS change la couleur du texte ?" android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_option1" android:text="font-weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option2" android:text="background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option3" android:text="color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q2 -->
+        <TextView android:text="2. Quelle propriété CSS change la taille de la police ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_option1" android:text="font-size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option2" android:text="text-size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option3" android:text="font-style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q3 -->
+        <TextView android:text="3. Quelle propriété CSS ajoute une marge autour d'un élément ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_option1" android:text="padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option2" android:text="margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option3" android:text="border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q4 -->
+        <TextView android:text="4. Quelle propriété CSS change la couleur de fond ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_option1" android:text="color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option2" android:text="background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option3" android:text="background-color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q5 -->
+        <TextView android:text="5. Quelle propriété CSS ajoute une bordure ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5_option1" android:text="margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option2" android:text="border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option3" android:text="outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+</ScrollView>

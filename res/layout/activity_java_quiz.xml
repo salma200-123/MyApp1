@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="1. Quel est le type de données pour les entiers ?"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_option1"
+                android:text="float"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option2"
+                android:text="double"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option3"
+                android:text="int"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView android:text="2. Quel est le mot-clé d'accès public ?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_option1"
+                android:text="private"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option2"
+                android:text="public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option3"
+                android:text="protected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView android:text="3. Quel mot-clé est utilisé pour créer un objet ?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_option1"
+                android:text="new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option2"
+                android:text="class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option3"
+                android:text="object"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView android:text="4. Résultat de 3 > 5 en Java ?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_option1"
+                android:text="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option2"
+                android:text="error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option3"
+                android:text="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <TextView android:text="5. Qui exécute le bytecode Java ?"
+            android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5_option1"
+                android:text="CPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option2"
+                android:text="JVM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option3"
+                android:text="JRE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre"
+            android:layout_marginTop="24dp" />
+
+        <TextView android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

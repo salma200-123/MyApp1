@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Q1 -->
+        <TextView android:text="1. Quel est le type de données pour les entiers en C ?" android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_option1" android:text="float"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option2" android:text="int"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1_option3" android:text="double"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q2 -->
+        <TextView android:text="2. Quelle fonction affiche du texte en C ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_option1" android:text="scanf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option2" android:text="getchar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2_option3" android:text="printf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q3 -->
+        <TextView android:text="3. Quel symbole est utilisé pour la multiplication ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_option1" android:text="*"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option2" android:text="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3_option3" android:text="/"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q4 -->
+        <TextView android:text="4. Quel est le symbole de commentaire sur une ligne en C ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_option1" android:text="/* ... */"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option2" android:text="//"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q4_option3" android:text="#"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Q5 -->
+        <TextView android:text="5. Quel compilateur est souvent utilisé pour le C ?" android:textSize="18sp" android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/question5" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q5_option1" android:text="gcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option2" android:text="javac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q5_option3" android:text="python"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soumettre"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+</ScrollView>

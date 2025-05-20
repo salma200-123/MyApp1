@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisissez un quiz"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Java" />
+
+        <Button
+            android:id="@+id/btn_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz C"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Python"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_css"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz CSS"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btn_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz HTML"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
